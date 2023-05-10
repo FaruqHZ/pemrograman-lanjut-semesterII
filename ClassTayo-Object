@@ -1,0 +1,34 @@
+package com.pemrogramanlanjut;
+
+// Muhammad Faruq (12250111791)
+
+public class CobaTayo {
+    public static void main(String[] args) {
+
+        Tayo mobilTayo = new Tayo();
+
+        mobilTayo.firstMethod("Tayo", "Biru", 6, 1234, "TIF");
+        System.out.println();
+        int totalRange = mobilTayo.secondMethod(60, 2);
+        System.out.println("Total Jarak Tempuh  = " + totalRange + " KM/jam");
+    }
+
+}
+
+public class Tayo {
+
+    void firstMethod (String carBrand, String carColour, int numberOfWheels, int numberPlateCode, String letterPlateCode){
+        System.out.println("Merek Mobil     : " + carBrand);
+        System.out.println("Jumlah Roda     : " + numberOfWheels);
+        System.out.println("Warna Mobil     : " + carColour);
+        System.out.println("Plat Nomor      : " +  "BM " + numberPlateCode + "-" + letterPlateCode);
+    }
+
+    int secondMethod (int carSpeed, int time){
+        System.out.println("Kecepatan Mobil/jam = " + carSpeed + " KM");
+        System.out.println("Waktu               = " + time + " Jam");
+        int totalRange = carSpeed * time;
+        return totalRange;
+    }
+
+}
